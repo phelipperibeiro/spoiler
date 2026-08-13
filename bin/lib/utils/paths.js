@@ -1,4 +1,4 @@
-import { existsSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { IDES } from "../config/ide-config.js";
@@ -21,6 +21,21 @@ export function getFrameworkRoot() {
     "Could not locate framework assets.\n" +
       "Run: npm install spoiler-framework --save-dev",
   );
+}
+
+/** @returns {{ name: string, version: string, root: string }} */
+export function getPackageInfo() {
+  const root = getFrameworkRoot();
+  const pkgPath = join(root, "package.json");
+  if (!existsSync(pkgPath)) {
+    return { name: "spoiler-framework", version: "0.0.0", root };
+  }
+  const pkg = JSON.parse(readFileSync(pkgPath, "utf-8"));
+  return {
+    name: pkg.name || "spoiler-framework",
+    version: pkg.version || "0.0.0",
+    root,
+  };
 }
 
 export function detectIDE(cwd) {

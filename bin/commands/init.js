@@ -18,8 +18,10 @@ import {
   YELLOW,
   CYAN,
   DIM,
+  BOLD,
   NC,
 } from "../lib/utils/ui.js";
+import { getPackageInfo } from "../lib/utils/paths.js";
 import { logger, configureFromFlags } from "../lib/utils/logger.js";
 
 function ask(rl, question) {
@@ -159,8 +161,14 @@ export async function init(flags) {
     writeFileSync(gitignore, `${ignoreLine}\n`);
   }
 
+  const pkg = getPackageInfo();
+
   logger.info("");
   logger.info(`${GREEN}✓ Configuração concluída!${NC}`);
+  logger.info(
+    `${BOLD}${CYAN}  versão: ${pkg.name} v${pkg.version}${NC}`,
+  );
+  logger.info(`${DIM}  origem: ${pkg.root}${NC}`);
   logger.info(`${DIM}Pasta criada: ${ideDir}${NC}`);
   logger.info("");
 

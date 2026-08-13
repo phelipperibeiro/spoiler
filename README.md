@@ -51,6 +51,13 @@ cd workspace-squad/
 npm link spoiler-framework
 ```
 
+Confira **onde** o binário ficou no PATH (útil se houver mais de uma instalação):
+
+```bash
+which spoiler
+spoiler --version
+```
+
 ### 3. Bootstrap da IDE
 
 ```bash
@@ -96,6 +103,13 @@ npm install /caminho/para/spoiler --save-dev
 ```
 
 **Com `npm link`:** o `git pull` no clone já basta — o link aponta para a pasta.
+
+Antes de seguir, confira se o `spoiler` do PATH é o que você acabou de atualizar:
+
+```bash
+which spoiler
+spoiler --version
+```
 
 ### 3. Espelhar assets na pasta da IDE
 
