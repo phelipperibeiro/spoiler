@@ -14,8 +14,9 @@ workflows/
 │
 ├── product/                      # Gestão de Produto & Requisitos
 │   ├── prod.spec.md              # Entrypoint de especificações
-│   ├── prod.spec.prd.md          # PRD
-│   ├── prod.spec.frd.md          # FRD
+│   ├── prod.spec.prd.md          # Documento de Requisitos de Produto
+│   ├── prod.spec.frd.md          # Documento de Requisitos Funcionais
+│   ├── prod.spec.breakdown.md    # Quebra em versões / épicos / histórias
 │   ├── prod.spec.epic.md         # Épicos
 │   ├── prod.spec.issue.md        # Issues (stories, tasks, bugs)
 │   └── prod.spec.clarify.md      # Esclarecer/validar spec
@@ -69,8 +70,9 @@ workflows/
 | Workflow | Propósito |
 |----------|-----------|
 | `prod.spec.md` | Entrypoint unificado para especificações |
-| `prod.spec.prd.md` | Criar/editar PRD (Product Requirements Document) |
-| `prod.spec.frd.md` | Criar/editar FRD (Feature Requirements Document) |
+| `prod.spec.prd.md` | Criar/editar Documento de Requisitos de Produto |
+| `prod.spec.frd.md` | Criar/editar Documento de Requisitos Funcionais |
+| `prod.spec.breakdown.md` | Quebrar spec grande em versões, épicos e histórias |
 | `prod.spec.epic.md` | Criar/editar épicos |
 | `prod.spec.issue.md` | Criar/editar issues (stories, tasks, bugs) |
 | `prod.spec.clarify.md` | Esclarecer e validar especificações existentes |
@@ -135,6 +137,8 @@ Utilize o arquivo `../../workflows/[dominio]/nome-do-workflow.md` como template 
 ```bash
 /warm-up
 /prod.spec.frd
+/prod.spec.clarify
+/prod.spec.breakdown   # se a feature ainda estiver grande
 /eng.start "feature-id"
 /eng.plan "feature-id"
 /eng.work "feature-id"

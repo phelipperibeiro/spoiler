@@ -28,8 +28,9 @@ workflows/
 │
 ├── product/                        # Workflows de produto
 │   ├── prod.spec.md               # Entrypoint de specs
-│   ├── prod.spec.prd.md           # PRD
-│   ├── prod.spec.frd.md           # FRD
+│   ├── prod.spec.prd.md           # Documento de Requisitos de Produto
+│   ├── prod.spec.frd.md           # Documento de Requisitos Funcionais
+│   ├── prod.spec.breakdown.md     # Quebra em versões / épicos / histórias
 │   ├── prod.spec.epic.md          # Epicos
 │   ├── prod.spec.issue.md         # Issues
 │   └── prod.spec.clarify.md       # Clarificacao

@@ -4,7 +4,7 @@
 
 **Framework de desenvolvimento orientado por contexto para IDEs de IA.**
 
-[O que e o Spoiler?](AGENTS.md) &#8226; [Get Started](#get-started) &#8226; [Atualizar](#atualizar--sincronizar) &#8226; [GitHub](https://github.com/phelipperibeiro/spoiler)
+[O que e o Spoiler?](docs/visao-geral.md) &#8226; [Estrutura](docs/estrutura/README.md) &#8226; [Get Started](#get-started) &#8226; [Atualizar](#atualizar--sincronizar) &#8226; [GitHub](https://github.com/phelipperibeiro/spoiler)
 
 </div>
 
@@ -180,7 +180,11 @@ O Spoiler e organizado em 5 camadas.
 
 Precisa de ajuda?
 
-- **Documentacao completa** &mdash; `AGENTS.md`
+- **Documentacao completa (proposta e conceitos)** &mdash; [`docs/visao-geral.md`](docs/visao-geral.md)
+- **Estrutura do repo (cada pasta/arquivo)** &mdash; [`docs/estrutura/`](docs/estrutura/README.md)
+- **Produto / PM / PO (comandos e exemplos)** &mdash; [`docs/produto/`](docs/produto/README.md)
+- **Indice de docs/** &mdash; [`docs/README.md`](docs/README.md)
+- **Instrucoes para agentes / mapa de skills** &mdash; `AGENTS.md`
 - **Issues/Feedback** &mdash; skill `report-issue`
 - **Duvidas sobre comandos** &mdash; Pergunte diretamente ao agent:
   `"Como funciona /eng.start?"` | `"Qual a diferenca entre /eng.work e /pr?"` | `"O que e CDD?"`

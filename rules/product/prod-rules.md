@@ -91,15 +91,21 @@ Abaixo, segue uma descrição de algumas das variáveis mais importantes para as
 
 
 ## Arquivos de instruções e comandos
-Sempre siga as instruções de acordo com as relações abaixo:
-- `$PROD_FLOWS/prod.spec.prd.md` para construir PRDs
-- `$PROD_FLOWS/prod.spec.frd.md` para criar arquivos de RFD que descreve funcionalidades
-- `$PROD_FLOWS/prod.spec.breakdown.md` para dividir uma especificação existente
-- `$PROD_FLOWS/prod.spec.clarify.md` para esclarecer uma especificação existente
-- `$PROD_FLOWS/prod.spec.epic.md` para construir épicos
-- `$PROD_FLOWS/prod.spec.issue.md` para construir histórias e tarefas
 
-Sempre atualize a documentação existente do projeto com as mudanças que forem feitas no projeto, ou seja, em cada atualização de feature, criação de novas features, novas especificações de produto ou técnicas, atualize as documentações existentes principalmente as PRDs e RFDs de forma a manter o projeto atualizado.
+Sempre siga as instruções de acordo com as relações abaixo.  
+**Guia para humanos (desenvolvedores aprendendo produto):** `docs/produto/` — uma página por comando, termos por extenso.
+
+- `$PROD_FLOWS/prod.spec.prd.md` — Documento de Requisitos de Produto (*Product Requirements Document*) → [docs/produto/prod.spec.prd.md](../../docs/produto/prod.spec.prd.md)
+- `$PROD_FLOWS/prod.spec.frd.md` — Documento de Requisitos Funcionais (*Functional Requirements Document*) → [docs/produto/prod.spec.frd.md](../../docs/produto/prod.spec.frd.md)
+- `$PROD_FLOWS/prod.spec.breakdown.md` — Quebra de especificação grande em fatias → [docs/produto/prod.spec.breakdown.md](../../docs/produto/prod.spec.breakdown.md)
+- `$PROD_FLOWS/prod.spec.clarify.md` — Esclarecimento de ambiguidades na spec → [docs/produto/prod.spec.clarify.md](../../docs/produto/prod.spec.clarify.md)
+- `$PROD_FLOWS/prod.spec.epic.md` — Épico (agrupador de histórias/tarefas) → [docs/produto/prod.spec.epic.md](../../docs/produto/prod.spec.epic.md)
+- `$PROD_FLOWS/prod.spec.issue.md` — Histórias de usuário, tarefas e bugs → [docs/produto/prod.spec.issue.md](../../docs/produto/prod.spec.issue.md)
+
+Ponto de entrada quando o tipo ainda é incerto: `$PROD_FLOWS/prod.spec.md` → [docs/produto/prod.spec.md](../../docs/produto/prod.spec.md)  
+**Guia de decisão (qual spec usar):** [docs/produto/prod.spec.guide.md](../../docs/produto/prod.spec.guide.md) · índice: [docs/produto/README.md](../../docs/produto/README.md)
+
+Sempre atualize a documentação existente do projeto com as mudanças que forem feitas no projeto, ou seja, em cada atualização de feature, criação de novas features, novas especificações de produto ou técnicas, atualize as documentações existentes — principalmente os **Documentos de Requisitos de Produto** e os **Documentos de Requisitos Funcionais** — de forma a manter o projeto atualizado.
 
 Siga sempre o formato markdown para fazer os arquivos finais.
 
@@ -119,10 +125,10 @@ Em itens e especificações, utilizamos status para identificar quais etapas do 
 
 Dentro das pastas do projeto, os caminhos de pastas e o nome dos arquivos finais devem ser criados seguindo esse padrão:
 
-- para PRD: $PROD_DOCS/prd-{id}-{prd-name-based-in-prd-content}/prd-{id}-{prd-name-based-in-prd-content}.md
-- para RFD: $PROD_DOCS/prd-{id}-{prd-name-based-in-prd-content}/frd-{id}-{frd-name-based-in-frd-content}.md
-- para epic: $PROD_DOCS/prd-{id}-{prd-name-based-in-prd-content}/issues/epic-{id}-{epic-name-based-in-epic-content}.md
-- para story/tasks: $PROD_DOCS/prd-{id}-{prd-name-based-in-prd-content}/issues/{story|task}-{id}-{issue-name-based-in-issue-content}.md
+- Documento de Requisitos de Produto: `$PROD_DOCS/prd-{id}-{nome}/prd-{id}-{nome}.md`
+- Documento de Requisitos Funcionais: `$PROD_DOCS/prd-{id}-{nome-do-pai}/frd-{id}-{nome}.md`
+- Épico: `$PROD_DOCS/prd-{id}-{nome-do-pai}/issues/epic-{id}-{nome}.md`
+- História / tarefa: `$PROD_DOCS/prd-{id}-{nome-do-pai}/issues/{story|task}-{id}-{nome}.md`
 
 O ID deve ser iterado nos novos arquivos seguindo a sequência existente.
 

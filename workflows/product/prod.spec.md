@@ -46,6 +46,7 @@ Estas instruções ajudam a orientar o usuário que deseja começar a construir 
   - Para ARD use as instruções em `$PROD_FLOWS/prod.spec.ard.md`
   - Para Issue use as instruções em `$PROD_FLOWS/prod.spec.issue.md`
   - Para clarificar e revisar qualquer tipo de especificação, use as instruções em `$PROD_FLOWS/prod.spec.clarify.md`
+  - Para quebrar uma especificação grande em fatias (versões / épicos / histórias), use `$PROD_FLOWS/prod.spec.breakdown.md`
   - Para criar épicos, use as instruções em `$PROD_FLOWS/prod.spec.epic.md`
 - **Idioma**: Mantenha o mesmo idioma da interação com o usuário, sendo que o idioma padrão é português brasileiro
 - **Faça suposições informadas**: Use o contexto, padrões de mercado e padrões comuns para preencher os gaps que a documentação ou a falta de informação não estiver cobrindo
